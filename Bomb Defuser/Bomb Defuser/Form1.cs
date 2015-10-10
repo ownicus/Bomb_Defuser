@@ -74,6 +74,7 @@ namespace Bomb_Defuser
         {
             labelSoln.Text = "";
             string wireCode = this.textBoxWire1.Text.ToUpper() + this.textBoxWire2.Text.ToUpper() + this.textBoxWire3.Text.ToUpper();
+
             if (numWires == 3)
             {
                 //If there are no red wires, cut the second wire
@@ -104,9 +105,24 @@ namespace Bomb_Defuser
                     this.labelSoln.Text = "3";
                 }
             }
+
             else if(numWires == 4)
             {
                 wireCode += this.textBoxWire4.Text;
+                if( this.radioButtonSerialEven.Checked )
+                {
+                    this.labelSoln.Text = "3";
+                }
+            }
+
+            else if (numWires == 5)
+            {
+
+            }
+
+            else
+            {
+
             }
         }
 
