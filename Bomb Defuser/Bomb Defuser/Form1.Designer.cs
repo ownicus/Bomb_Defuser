@@ -43,6 +43,9 @@
             this.textBoxWire4 = new System.Windows.Forms.TextBox();
             this.textBoxWire5 = new System.Windows.Forms.TextBox();
             this.textBoxWire6 = new System.Windows.Forms.TextBox();
+            this.radioButtonSerialEven = new System.Windows.Forms.RadioButton();
+            this.radioButtonSerialOdd = new System.Windows.Forms.RadioButton();
+            this.labelSerial = new System.Windows.Forms.Label();
             this.tabTasks.SuspendLayout();
             this.tabSimpleWires.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +72,9 @@
             // 
             // tabSimpleWires
             // 
+            this.tabSimpleWires.Controls.Add(this.labelSerial);
+            this.tabSimpleWires.Controls.Add(this.radioButtonSerialOdd);
+            this.tabSimpleWires.Controls.Add(this.radioButtonSerialEven);
             this.tabSimpleWires.Controls.Add(this.textBoxWire6);
             this.tabSimpleWires.Controls.Add(this.textBoxWire5);
             this.tabSimpleWires.Controls.Add(this.textBoxWire4);
@@ -123,6 +129,7 @@
             this.radioButton5Wires.TabStop = true;
             this.radioButton5Wires.Text = "5 wires";
             this.radioButton5Wires.UseVisualStyleBackColor = true;
+            this.radioButton5Wires.CheckedChanged += new System.EventHandler(this.radioButton5Wires_CheckedChanged);
             // 
             // radioButton6Wires
             // 
@@ -134,6 +141,7 @@
             this.radioButton6Wires.TabStop = true;
             this.radioButton6Wires.Text = "6 wires";
             this.radioButton6Wires.UseVisualStyleBackColor = true;
+            this.radioButton6Wires.CheckedChanged += new System.EventHandler(this.radioButton6Wires_CheckedChanged);
             // 
             // labelCut
             // 
@@ -158,6 +166,7 @@
             this.textBoxWire1.Name = "textBoxWire1";
             this.textBoxWire1.Size = new System.Drawing.Size(100, 20);
             this.textBoxWire1.TabIndex = 6;
+            this.textBoxWire1.TextChanged += new System.EventHandler(this.textBoxWire1_TextChanged);
             // 
             // textBoxWire2
             // 
@@ -165,6 +174,7 @@
             this.textBoxWire2.Name = "textBoxWire2";
             this.textBoxWire2.Size = new System.Drawing.Size(100, 20);
             this.textBoxWire2.TabIndex = 7;
+            this.textBoxWire2.TextChanged += new System.EventHandler(this.textBoxWire2_TextChanged);
             // 
             // textBoxWire3
             // 
@@ -172,6 +182,7 @@
             this.textBoxWire3.Name = "textBoxWire3";
             this.textBoxWire3.Size = new System.Drawing.Size(100, 20);
             this.textBoxWire3.TabIndex = 8;
+            this.textBoxWire3.TextChanged += new System.EventHandler(this.textBoxWire3_TextChanged);
             // 
             // textBoxWire4
             // 
@@ -179,6 +190,7 @@
             this.textBoxWire4.Name = "textBoxWire4";
             this.textBoxWire4.Size = new System.Drawing.Size(100, 20);
             this.textBoxWire4.TabIndex = 9;
+            this.textBoxWire4.TextChanged += new System.EventHandler(this.textBoxWire4_TextChanged);
             // 
             // textBoxWire5
             // 
@@ -186,6 +198,7 @@
             this.textBoxWire5.Name = "textBoxWire5";
             this.textBoxWire5.Size = new System.Drawing.Size(100, 20);
             this.textBoxWire5.TabIndex = 10;
+            this.textBoxWire5.TextChanged += new System.EventHandler(this.textBoxWire5_TextChanged);
             // 
             // textBoxWire6
             // 
@@ -193,6 +206,38 @@
             this.textBoxWire6.Name = "textBoxWire6";
             this.textBoxWire6.Size = new System.Drawing.Size(100, 20);
             this.textBoxWire6.TabIndex = 11;
+            this.textBoxWire6.TextChanged += new System.EventHandler(this.textBoxWire6_TextChanged);
+            // 
+            // radioButtonSerialEven
+            // 
+            this.radioButtonSerialEven.AutoSize = true;
+            this.radioButtonSerialEven.Location = new System.Drawing.Point(367, 47);
+            this.radioButtonSerialEven.Name = "radioButtonSerialEven";
+            this.radioButtonSerialEven.Size = new System.Drawing.Size(50, 17);
+            this.radioButtonSerialEven.TabIndex = 12;
+            this.radioButtonSerialEven.TabStop = true;
+            this.radioButtonSerialEven.Text = "Even";
+            this.radioButtonSerialEven.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSerialOdd
+            // 
+            this.radioButtonSerialOdd.AutoSize = true;
+            this.radioButtonSerialOdd.Location = new System.Drawing.Point(367, 71);
+            this.radioButtonSerialOdd.Name = "radioButtonSerialOdd";
+            this.radioButtonSerialOdd.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonSerialOdd.TabIndex = 13;
+            this.radioButtonSerialOdd.TabStop = true;
+            this.radioButtonSerialOdd.Text = "Odd";
+            this.radioButtonSerialOdd.UseVisualStyleBackColor = true;
+            // 
+            // labelSerial
+            // 
+            this.labelSerial.AutoSize = true;
+            this.labelSerial.Location = new System.Drawing.Point(367, 28);
+            this.labelSerial.Name = "labelSerial";
+            this.labelSerial.Size = new System.Drawing.Size(139, 13);
+            this.labelSerial.TabIndex = 14;
+            this.labelSerial.Text = "Last digit of serial number is:";
             // 
             // Form1
             // 
@@ -226,6 +271,9 @@
         private System.Windows.Forms.TextBox textBoxWire3;
         private System.Windows.Forms.TextBox textBoxWire2;
         private System.Windows.Forms.TextBox textBoxWire1;
+        private System.Windows.Forms.Label labelSerial;
+        private System.Windows.Forms.RadioButton radioButtonSerialOdd;
+        private System.Windows.Forms.RadioButton radioButtonSerialEven;
     }
 }
 
